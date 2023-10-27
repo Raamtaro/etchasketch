@@ -46,3 +46,6 @@ body {
     text-align: center;
     justify-self: flex-end;
 }
+
+/* add a square style rule to make the border visible, for testing purposes */
+
