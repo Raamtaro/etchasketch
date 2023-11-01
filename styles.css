@@ -39,10 +39,14 @@ body {
 }
 
 .Grid {
-    height: 700px;
-    width: 700px;
+    min-height: 700px;
+    min-width: 700px;
     border: 1px solid #101214;
     background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .Controls {
@@ -62,3 +66,12 @@ body {
 
 /* add a square style rule to make the border visible, for testing purposes */
 
+.Row {
+    display: flex;
+}
+
+
+.square {
+    margin: 0;
+    padding: 0;
+}
