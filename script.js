@@ -9,6 +9,8 @@ function createGrid(size) {
     for (let i = 0; i < size; i++){
         const square = document.createElement("div");
         square.classList.add("square");
+        square.clientHeight = grid.clientHeight/size;
+        square.clientWidth = grid.clientWidth/size;
         row.appendChild(square);
     };
     

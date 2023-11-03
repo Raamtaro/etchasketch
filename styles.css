@@ -47,6 +47,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    
 }
 
 .Controls {
@@ -74,4 +75,7 @@ body {
 .square {
     margin: 0;
     padding: 0;
+    border: 1px solid #101214;
+    height: 43.75px;
+    width: 43.75px;
 }
