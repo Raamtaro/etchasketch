@@ -28,9 +28,9 @@ function createGrid(size) {
 };
 
 
-createGrid(16);
+createGrid(17);
 // console.log(typeof((grid.clientHeight/16).toString() + 'px'))
-console.log((grid.clientHeight/16).toString() + 'px');
+// console.log((grid.clientHeight/16).toString() + 'px');
 
 
 // row.appendChild(square);
