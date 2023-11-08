@@ -48,3 +48,26 @@ addEventListener('mouseenter', () => {
 
 
 
+
+I think I'm going to need to refactor the createGrid loops and turn them into one loop after all.
+
+for (let j=0; j < size - 1; j++) {
+    for (i=0; i < size; i++) {
+        let square = document.createElement("div");
+        square.classList.add("square");
+
+        square.style.height = (grid.clientHeight/size).toString() + 'px';
+        square.style.width = (grid.clientWidth/size).toString() + 'px';
+        
+        square.addEventListener('mouseenter', ()=>{
+            square.style.backgroundColor = "black";
+        });
+        
+        if (j === 0) row.appendChild(square);
+        else clone.appendChild(square);
+        
+    };
+    let clone = row.cloneNode(false);
+    grid.appendChild(clone);
+};
+
